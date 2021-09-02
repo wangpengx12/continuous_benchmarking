@@ -4,8 +4,17 @@ bench: a.out
 json: a.out
 	./a.out --benchmark_format=json | tee benchmark_result.json
 
+bench-other: other.out
+	./other.out
+
+json-other: other.out
+	./other.out --benchmark_format=json | tee benchmark_result_other.json
+
 a.out: benchmark/build/src/libbenchmark.a bench.cpp fib.hpp
 	clang++ -std=c++14 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench.cpp -l benchmark
+
+other.out: benchmark/build/src/libbenchmark.a bench-other.cpp fib.hpp
+	clang++ -std=c++14 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench-other.cpp -l benchmark
 
 benchmark/build/src/libbenchmark.a: benchmark/build benchmark/googletest
 	cd ./benchmark/build && \
@@ -22,6 +31,6 @@ benchmark/googletest: benchmark
 	[ -d benchmark/googletest ] || git clone --depth=1 --single-branch --branch release-1.10.0 https://github.com/google/googletest.git benchmark/googletest
 
 clean:
-	rm -rf a.out benchmark
+	rm -rf a.out other.out benchmark
 
-.PHONY: bench json clean
+.PHONY: bench bench-other json json-other clean
