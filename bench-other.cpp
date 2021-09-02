@@ -25,8 +25,8 @@ static void fib_40(benchmark::State &state) {
 }
 
 // Register the function as a benchmark
-BENCHMARK(fib_30);
-BENCHMARK(fib_40);
+BENCHMARK(fib_30)->DenseThreadRange(1, 6, 2);
+BENCHMARK(fib_40)->DenseThreadRange(1, 6, 2);
 
 // Run the benchmark
 BENCHMARK_MAIN();
