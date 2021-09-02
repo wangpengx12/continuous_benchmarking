@@ -40,7 +40,7 @@ jobs:
         with:
           name: Other C++ Benchmark
           tool: 'googlecpp'
-          out-file-path: benchmark_result_other.json
+          output-file-path: benchmark_result_other.json
           github-token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           auto-push: true
           alert-threshold: '200%'
