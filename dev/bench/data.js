@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630589213018,
+  "lastUpdate": 1630589917737,
   "repoUrl": "https://github.com/wangpengx12/continuous_benchmarking",
   "entries": {
     "C++ Benchmark": [
@@ -204,6 +204,40 @@ window.BENCHMARK_DATA = {
             "value": 34527.3245941956,
             "unit": "ns/iter",
             "extra": "iterations: 20330\ncpu: 34524.461436301026 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "committer": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "distinct": true,
+          "id": "1f54ae6b3735aaea7eff962934e851413d3afb90",
+          "message": "add multi-thread test in bench-ohter.cpp",
+          "timestamp": "2021-09-02T21:37:59+08:00",
+          "tree_id": "63f69c0ba0c8a777ae0b4e2c0684e82d089c9013",
+          "url": "https://github.com/wangpengx12/continuous_benchmarking/commit/1f54ae6b3735aaea7eff962934e851413d3afb90"
+        },
+        "date": 1630589916708,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 211.77473235927414,
+            "unit": "ns/iter",
+            "extra": "iterations: 3293034\ncpu: 211.754732869445 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 28979.75624227508,
+            "unit": "ns/iter",
+            "extra": "iterations: 24270\ncpu: 28880.518912237334 ns\nthreads: 1"
           }
         ]
       }
