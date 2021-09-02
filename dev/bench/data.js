@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630589917737,
+  "lastUpdate": 1630589925986,
   "repoUrl": "https://github.com/wangpengx12/continuous_benchmarking",
   "entries": {
     "C++ Benchmark": [
@@ -274,6 +274,76 @@ window.BENCHMARK_DATA = {
             "value": 524286394.00000066,
             "unit": "ns/iter",
             "extra": "iterations: 1\ncpu: 524146060.99999994 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "committer": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "distinct": true,
+          "id": "1f54ae6b3735aaea7eff962934e851413d3afb90",
+          "message": "add multi-thread test in bench-ohter.cpp",
+          "timestamp": "2021-09-02T21:37:59+08:00",
+          "tree_id": "63f69c0ba0c8a777ae0b4e2c0684e82d089c9013",
+          "url": "https://github.com/wangpengx12/continuous_benchmarking/commit/1f54ae6b3735aaea7eff962934e851413d3afb90"
+        },
+        "date": 1630589925208,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_30/threads:1",
+            "value": 2801799.0120967473,
+            "unit": "ns/iter",
+            "extra": "iterations: 248\ncpu: 2801506.1411290322 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_30/threads:3",
+            "value": 1375312.3239625117,
+            "unit": "ns/iter",
+            "extra": "iterations: 249\ncpu: 2803146.3413654612 ns\nthreads: 3"
+          },
+          {
+            "name": "fib_30/threads:5",
+            "value": 1427133.0049999638,
+            "unit": "ns/iter",
+            "extra": "iterations: 240\ncpu: 2802390.866666666 ns\nthreads: 5"
+          },
+          {
+            "name": "fib_30/threads:6",
+            "value": 1348403.661375634,
+            "unit": "ns/iter",
+            "extra": "iterations: 252\ncpu: 2804458.535714287 ns\nthreads: 6"
+          },
+          {
+            "name": "fib_40/threads:1",
+            "value": 344361311.50000906,
+            "unit": "ns/iter",
+            "extra": "iterations: 2\ncpu: 344355505.9999999 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_40/threads:3",
+            "value": 170298300.88888946,
+            "unit": "ns/iter",
+            "extra": "iterations: 3\ncpu: 345870319.0000002 ns\nthreads: 3"
+          },
+          {
+            "name": "fib_40/threads:5",
+            "value": 169152522.83999962,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 344874903.6 ns\nthreads: 5"
+          },
+          {
+            "name": "fib_40/threads:6",
+            "value": 169788209.58333388,
+            "unit": "ns/iter",
+            "extra": "iterations: 6\ncpu: 344812110.66666675 ns\nthreads: 6"
           }
         ]
       }
