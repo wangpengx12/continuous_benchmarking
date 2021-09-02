@@ -12,7 +12,7 @@ static void fib_30(benchmark::State &state) {
     benchmark::DoNotOptimize(i);
     benchmark::DoNotOptimize(fib(i));
   }
-  state.counters["ops"] = benchmark::Counter(state.iterations(), benchmark::Counter::kIsRate)
+  state.counters["ops"] = benchmark::Counter(state.iterations(), benchmark::Counter::kIsRate);
 }
 
 static void fib_40(benchmark::State &state) {
@@ -23,7 +23,7 @@ static void fib_40(benchmark::State &state) {
     benchmark::DoNotOptimize(i);
     benchmark::DoNotOptimize(fib(i));
   }
-  state.counters["ops"] = benchmark::Counter(state.iterations(), benchmark::Counter::kIsRate)
+  state.counters["ops"] = benchmark::Counter(state.iterations(), benchmark::Counter::kIsRate);
 }
 
 // Register the function as a benchmark
