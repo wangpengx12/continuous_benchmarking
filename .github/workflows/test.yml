@@ -41,6 +41,8 @@ jobs:
           name: Other C++ Benchmark
           tool: 'googlecpp'
           output-file-path: benchmark_result_other.json
+          # path to see the chart https://wangpengx12.github.io/continuous_benchmarking/{benchmark-data-dir-path}
+          benchmark-data-dir-path: dev/bench-other
           github-token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           auto-push: true
           alert-threshold: '200%'
