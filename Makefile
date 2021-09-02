@@ -14,7 +14,7 @@ a.out: benchmark/build/src/libbenchmark.a bench.cpp fib.hpp
 	clang++ -std=c++14 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench.cpp -l benchmark
 
 other.out: benchmark/build/src/libbenchmark.a bench-other.cpp fib.hpp
-	clang++ -std=c++14 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench-other.cpp -l benchmark
+	clang++ -std=c++14 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench-other.cpp -l benchmark -o other.out
 
 benchmark/build/src/libbenchmark.a: benchmark/build benchmark/googletest
 	cd ./benchmark/build && \
