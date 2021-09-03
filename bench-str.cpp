@@ -17,6 +17,7 @@ static void BM_memcpy(benchmark::State& state) {
 }
 
 
+
 // Register the function as a benchmark
 BENCHMARK(BM_memcpy)->Range(8, 8<<10);;
 // BENCHMARK(fib_40)->DenseThreadRange(1, 6, 2)->UseRealTime()->Repetitions(5)->ReportAggregatesOnly(true);
