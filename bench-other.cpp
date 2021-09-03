@@ -27,8 +27,8 @@ static void fib_40(benchmark::State &state) {
 }
 
 // Register the function as a benchmark
-BENCHMARK(fib_30)->DenseThreadRange(1, 6, 2)->UseRealTime()->Repetitions(5)->ReportAggregatesOnly(true);
-BENCHMARK(fib_40)->DenseThreadRange(1, 6, 2)->UseRealTime()->Repetitions(5)->ReportAggregatesOnly(true);
+BENCHMARK(fib_30)->DenseThreadRange(1, 6, 2)->UseRealTime();
+BENCHMARK(fib_40)->DenseThreadRange(1, 6, 2)->UseRealTime();
 
 // extern bool FLAGS_benchmark_counters_tabular;
 // Run the benchmark
