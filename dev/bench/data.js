@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630639557958,
+  "lastUpdate": 1630640985408,
   "repoUrl": "https://github.com/wangpengx12/continuous_benchmarking",
   "entries": {
     "C++ Benchmark": [
@@ -544,6 +544,40 @@ window.BENCHMARK_DATA = {
             "value": 28801.511216298903,
             "unit": "ns/iter",
             "extra": "iterations: 24295\ncpu: 28801.03807367771 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "committer": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "distinct": true,
+          "id": "50c5de3ac0882b6e66cee60e016c313d4dd9683a",
+          "message": "MOD: increase threshold to make alert disappear",
+          "timestamp": "2021-09-03T11:49:13+08:00",
+          "tree_id": "e63996743454802a14e79ca3f734ff8d0cf80f0e",
+          "url": "https://github.com/wangpengx12/continuous_benchmarking/commit/50c5de3ac0882b6e66cee60e016c313d4dd9683a"
+        },
+        "date": 1630640984374,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 212.1847471859061,
+            "unit": "ns/iter",
+            "extra": "iterations: 3306026\ncpu: 211.8229696318178 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 28802.246449010894,
+            "unit": "ns/iter",
+            "extra": "iterations: 24289\ncpu: 28801.543949936186 ns\nthreads: 1"
           }
         ]
       }
