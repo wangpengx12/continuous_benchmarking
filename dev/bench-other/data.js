@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630637280980,
+  "lastUpdate": 1630637923675,
   "repoUrl": "https://github.com/wangpengx12/continuous_benchmarking",
   "entries": {
     "Other C++ Benchmark": [
@@ -830,6 +830,172 @@ window.BENCHMARK_DATA = {
             "value": 1211584.6094780958,
             "unit": "ns/iter",
             "extra": "iterations: 5\ncpu: 1210492.7995747582 ns\nthreads: 6"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "committer": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "distinct": true,
+          "id": "f9ae237d6336dca562d116a8cbf3082e05086370",
+          "message": "MOD: mod bench-other.cpp to make test happy",
+          "timestamp": "2021-09-03T10:58:09+08:00",
+          "tree_id": "2ba316b13fb14171eeea689fe9deb129e30bd544",
+          "url": "https://github.com/wangpengx12/continuous_benchmarking/commit/f9ae237d6336dca562d116a8cbf3082e05086370"
+        },
+        "date": 1630637923347,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_30/repeats:5/real_time/threads:1_mean",
+            "value": 8.40000006974151e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 8.800000000000647e-7 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:1_median",
+            "value": 8.00000066192297e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 8.999999999998592e-7 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:1_stddev",
+            "value": 5.4772278444160015e-8,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 4.472135955001997e-8 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:3_mean",
+            "value": 3.3780000244910807e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 9.066666666666454e-7 ns\nthreads: 3"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:3_median",
+            "value": 3.001111205473232e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 8.666666666667643e-7 ns\nthreads: 3"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:3_stddev",
+            "value": 7.267636689916061e-8,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 7.226494462887166e-8 ns\nthreads: 3"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:5_mean",
+            "value": 2.35207999139675e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 0.0000010119999999999913 ns\nthreads: 5"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:5_median",
+            "value": 2.3600000076839935e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 0.0000010399999999999083 ns\nthreads: 5"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:5_stddev",
+            "value": 9.538149797066299e-9,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 3.8987177379269236e-8 ns\nthreads: 5"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:6_mean",
+            "value": 1.8333888710407739e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 9.600000000000342e-7 ns\nthreads: 6"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:6_median",
+            "value": 1.83333330344087e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 9.666666666666427e-7 ns\nthreads: 6"
+          },
+          {
+            "name": "fib_30/repeats:5/real_time/threads:6_stddev",
+            "value": 3.4134105085791615e-9,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 1.9002923751740894e-8 ns\nthreads: 6"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:1_mean",
+            "value": 8.399999842367833e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 8.400000000002156e-7 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:1_median",
+            "value": 7.999999525054591e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 8.000000000004531e-7 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:1_stddev",
+            "value": 5.4772299200421814e-8,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 5.4772255750192485e-8 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:3_mean",
+            "value": 3.4222222590566777e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 8.99999999999953e-7 ns\nthreads: 3"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:3_median",
+            "value": 3.333333324917476e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 8.999999999999536e-7 ns\nthreads: 3"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:3_stddev",
+            "value": 2.1372644240884343e-8,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 4.082482904630583e-8 ns\nthreads: 3"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:5_mean",
+            "value": 2.2321600044961092e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 9.88000000000012e-7 ns\nthreads: 5"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:5_median",
+            "value": 2.2400000489142262e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 9.800000000000819e-7 ns\nthreads: 5"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:5_stddev",
+            "value": 5.908744261457719e-9,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 1.0954451150145886e-8 ns\nthreads: 5"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:6_mean",
+            "value": 1.8501111185287305e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 9.633333333334437e-7 ns\nthreads: 6"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:6_median",
+            "value": 1.8611111032542897e-7,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 9.666666666663538e-7 ns\nthreads: 6"
+          },
+          {
+            "name": "fib_40/repeats:5/real_time/threads:6_stddev",
+            "value": 2.4908472368419146e-9,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 2.173067468396677e-8 ns\nthreads: 6"
           }
         ]
       }
