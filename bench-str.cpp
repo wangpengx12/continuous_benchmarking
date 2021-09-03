@@ -1,5 +1,5 @@
 #include "benchmark/benchmark.h"
-
+#include <string.h>
 #include <iostream>
 
 static void BM_memcpy(benchmark::State& state) {
