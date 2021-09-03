@@ -10,6 +10,7 @@ static void BM_memcpy(benchmark::State& state) {
   for (auto _ : state) {
     memcpy(dst, src, state.range(0));
   }
+  state.counters["ops"] = benchmark::Counter(state.iterations(), benchmark::Counter::kIsRate);
   state.SetBytesProcessed(int64_t(state.iterations()) * int64_t(state.range(0)));
   delete[] src;
   delete[] dst;
