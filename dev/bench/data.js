@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630635691372,
+  "lastUpdate": 1630636747879,
   "repoUrl": "https://github.com/wangpengx12/continuous_benchmarking",
   "entries": {
     "C++ Benchmark": [
@@ -408,6 +408,40 @@ window.BENCHMARK_DATA = {
             "value": 28310.60188359795,
             "unit": "ns/iter",
             "extra": "iterations: 24209\ncpu: 28308.8007765707 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "committer": {
+            "email": "wangpeng12@kuaishou.com",
+            "name": "wangpeng12"
+          },
+          "distinct": true,
+          "id": "125bb8985ea7fcf5cd7b9983dfaa8581af73a107",
+          "message": "MOD: mod bench-other.cpp to make test happy",
+          "timestamp": "2021-09-03T10:38:26+08:00",
+          "tree_id": "57d5d0f27dd0413bcbf6f552e6fbc9e52e2f0b6a",
+          "url": "https://github.com/wangpengx12/continuous_benchmarking/commit/125bb8985ea7fcf5cd7b9983dfaa8581af73a107"
+        },
+        "date": 1630636746866,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 245.60922740535554,
+            "unit": "ns/iter",
+            "extra": "iterations: 2855689\ncpu: 245.5854180899951 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 32289.929757990292,
+            "unit": "ns/iter",
+            "extra": "iterations: 21611\ncpu: 32286.78765443525 ns\nthreads: 1"
           }
         ]
       }
