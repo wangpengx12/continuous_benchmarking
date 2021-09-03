@@ -10,11 +10,19 @@ bench-other: other.out
 json-other: other.out
 	./other.out --benchmark_format=json | tee benchmark_result_other.json
 
+bench-str: str.out
+	./str.out
+json-str: str.out
+	./str.out --benchmark_format=json | tee benchmark_result_str.json
+
 a.out: benchmark/build/src/libbenchmark.a bench.cpp fib.hpp
 	clang++ -std=c++14 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench.cpp -l benchmark
 
 other.out: benchmark/build/src/libbenchmark.a bench-other.cpp fib.hpp
 	clang++ -std=c++14 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench-other.cpp -l benchmark -o other.out
+
+str.out: benchmark/build/src/libbenchmark.a bench-str.cpp
+	clang++ -std=c++14 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench-str.cpp -l benchmark -o str.out
 
 benchmark/build/src/libbenchmark.a: benchmark/build benchmark/googletest
 	cd ./benchmark/build && \
@@ -33,4 +41,4 @@ benchmark/googletest: benchmark
 clean:
 	rm -rf a.out other.out benchmark
 
-.PHONY: bench bench-other json json-other clean
+.PHONY: bench bench-other bench-str json json-other json-str clean

@@ -49,3 +49,19 @@ jobs:
           comment-on-alert: true
           fail-on-alert: true
           alert-comment-cc-users: '@wangpengx12'
+      - name: Run memcpy benchmark
+        run: make json-str
+      - name: Store str memcpy Benchmark result
+        uses: rhysd/github-action-benchmark@v1
+        with:
+          name: string memcpy Benchmark
+          tool: 'googlecpp'
+          output-file-path: benchmark_result_str.json
+          # path to see the chart https://wangpengx12.github.io/continuous_benchmarking/{benchmark-data-dir-path}
+          benchmark-data-dir-path: dev/bench-str
+          github-token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: '200%'
+          comment-on-alert: true
+          fail-on-alert: true
+          alert-comment-cc-users: '@wangpengx12'
